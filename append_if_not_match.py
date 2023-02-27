@@ -21,6 +21,7 @@ string1 = append_if_not_match(string1, patterns1)
 print(string1)
 
 string2 = "গাজা খা তাহলে"
-patterns2 = ["\$\$", "!\$", "\?\$", "\$$"]
+# patterns2 = ["\$\$", "!\$", "\?\$", "\$$"]
+patterns2 = ["\\$\\$", "!\\$", "\\?\\$", "\\$\\$", "।\\$", "!", "\\?","।"]
 string2 = append_if_not_match(string2, patterns2)
 print(string2)
