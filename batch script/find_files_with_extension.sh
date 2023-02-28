@@ -21,7 +21,8 @@ read -r extension
 
 file_names=($(find_files_with_extension "$dir_to_search" "$extension"))
 for file_name in "${file_names[@]}"; do
-    echo "$file_name"
+    echo "path: $file_name"
+    echo "base name: $(basename $file_name)"
 done
 
 exit 0
